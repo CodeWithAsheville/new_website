@@ -18,10 +18,7 @@
     <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="css/round-about" rel="stylesheet">
-    <style type="text/css">
-        
-    </style>
+    <link href="css/round-about.css" rel="stylesheet">
 </head>
 
 <body>
@@ -428,59 +425,7 @@
     <script src="js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-        <script>
-            var map = L.mapbox.map('map', 'examples.map-9ijuk24y').setView([35.5955,-82.5495], 12);
-
-            // disable drag and zoom handlers
-            map.dragging.disable();
-            map.scrollWheelZoom.disable();
-            map.touchZoom.disable();
-
-            function showMap(err, data) {
-                 map.fitBounds(data.lbounds);
-            }
-        </script>
-
-    <script>
-    var geocoder = L.mapbox.geocoder('examples.map-vyofok3q'),
-        map = L.mapbox.map('map', 'examples.map-vyofok3q')
-
-    geocoder.query('Asheville, NC', showMap);
-
-    function showMap(err, data) {
-         map.fitBounds(data.lbounds);
-    }
-    </script>
-    <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    (function($) {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    })(jQuery);
-    </script>
-
+    <script src="js/custom-cfa.js"></script>
 </body>
 
 </html>
