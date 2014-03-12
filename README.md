@@ -1,4 +1,4 @@
-new_website
+new_website - Code for Asheville
 ===========
 
-just a sandbox to play with a new site
+Just a sandbox to play with a new site.
